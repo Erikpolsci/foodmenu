@@ -30,12 +30,120 @@ header {
 .menu-btn {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  
 }
 
 .btn {
-  font-size: ;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #acdeec 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(28, 20, 44, 0.3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  /* height: 48px; */
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
   height: 2rem;
-  width: 5rem;
+  width: 5.5rem;
   
 }
+
+.btn:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.container{
+  width: 90vw;
+  margin: auto;
+  max-width: 1170px;
+  display: flex;
+  justify-items:center;
+  padding: 5rem;
+  justify-content: center;
+}
+.section-item{
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem 2rem;
+  margin-left: 5rem;
+  
+  
+
+}
+
+
+.info header {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+
+  margin-left: -50px;
+  margin-top: -25px;
+  border-bottom: 0.5px;
+  font-size: 1rem;
+}
+
+.info h3 h4 {
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  text-align:left;
+
+}
+
+.image {
+  object-fit: cover;
+  height: 200px;
+  border: 0.25rem solid #acdeec;
+  border-radius: 10px;
+}
+
+.description {
+  margin-top: -2rem;
+  padding-top: 1rem;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
